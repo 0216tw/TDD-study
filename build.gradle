@@ -1,8 +1,7 @@
 plugins {
     id 'java'
 }
-
-group = 'org.example'
+group = 'org.tddstudy'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -12,6 +11,18 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation  "org.mockito:mockito-inline:+"
+
+    /*
+    2024.05.02 ktw 작성
+
+    mockito-inline 은 2.7.6 버전부터 사용가능
+    이전 mockito-core 는 MockMaker라는 확장 파일을 만들어야 모킹 객체를 생성하는 방법을 정의할 수 있었다.
+    하지만 위 버전부터는 mockito-inline 을 통해 내부적으로 모킹을 활성화 할 수 있다.
+    차이점 : MockMaker을 안만들어도 되니까 설정이 더 단순해짐
+    * */
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+
 }
 
 test {
