@@ -34,6 +34,17 @@ public class Users {
         return false;
     }
 
+    public void setPhone(String id , String phone) {
+        Optional<User> foundUser = users.stream().filter(user -> user.getId().equals(id)).findFirst();
+        foundUser.ifPresent(user -> user.setName(phone));
+    }
+
+    public void setName(String id , String name) {
+        Optional<User> foundUser = users.stream().filter(user -> user.getId().equals(id)).findFirst();
+        foundUser.ifPresent(user -> user.setName(name));
+    }
+
+
 
 
 }
