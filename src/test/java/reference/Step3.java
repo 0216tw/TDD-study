@@ -16,7 +16,7 @@ import static org.mockito.Mockito.*;
 public class Step3 {
     @Test
     @DisplayName("3. anyString() , argThat 등 사용해보기")
-    public void argumentMatchers() {
+    public void test() {
 
         List<User> userList = new ArrayList<>();
         userList.add(new User("AAAAA" , "pass123" , "내이름은A" , "010-1111-1111"));

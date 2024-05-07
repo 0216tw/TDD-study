@@ -12,7 +12,7 @@ public class Step1 {
 
     @Test
     @DisplayName("1. Mock 객체 만들고 verify 사용해보기")
-    public void createMock() {
+    public void test() {
 
         /* 사전에 만들어놓은 User mock 객체를 생성합니다. (위치 : main -> org.tddstudy.repository.User ) */
         User user1 = mock(User.class);

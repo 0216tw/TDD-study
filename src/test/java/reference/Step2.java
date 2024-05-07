@@ -11,7 +11,7 @@ public class Step2 {
 
     @Test
     @DisplayName("2. stub기술: verify로 메서드 호출시 특정 반환값 세팅하기")
-    public void createMock() {
+    public void test() {
 
         /* 사전에 만들어놓은 User mock 객체를 생성합니다. (위치 : main -> org.tddstudy.repository.User ) */
         User user1 = mock(User.class);

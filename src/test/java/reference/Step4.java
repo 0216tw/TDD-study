@@ -15,7 +15,7 @@ import static org.mockito.Mockito.*;
 public class Step4 {
     @Test
     @DisplayName("4. 메서드 호출 횟수 확인하기 ")
-    public void argumentMatchers() {
+    public void test() {
 
         List<User> userList = new ArrayList<>();
         userList.add(new User("AAAAA" , "pass123" , "내이름은A" , "010-1111-1111"));
