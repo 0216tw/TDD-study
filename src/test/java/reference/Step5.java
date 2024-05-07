@@ -13,7 +13,7 @@ import static org.mockito.Mockito.*;
 public class Step5 {
     @Test
     @DisplayName("5. 반환값이 void 일때 반환값이나 예외 설정하기")
-    public void argumentMatchers() {
+    public void test() {
 
         List<User> userList = new ArrayList<>();
         userList.add(new User("AAAAA" , "pass123" , "내이름은A" , "010-1111-1111"));

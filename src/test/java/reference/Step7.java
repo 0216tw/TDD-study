@@ -14,7 +14,7 @@ import static org.mockito.Mockito.*;
 public class Step7 {
     @Test
     @DisplayName("7. verify 검증 & 호출 테스트")
-    public void argumentMatchers() {
+    public void test() {
 
         List<User> userList = new ArrayList<>();
         userList.add(new User("AAAAA" , "pass123" , "내이름은A" , "010-1111-1111"));

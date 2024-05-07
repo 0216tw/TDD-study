@@ -16,8 +16,11 @@ public class Users {
     public void setUsers(List<User> users) {
         this.users = users;
     }
+    public void setUsers() {}
 
-
+    public List<User> getUsers() {
+        return users;
+    }
     public User findById(String id) {
         Optional<User> foundUser = users.stream().filter(user -> user.getId().equals(id)).findFirst();
         return foundUser.orElse(null);
@@ -43,6 +46,8 @@ public class Users {
         Optional<User> foundUser = users.stream().filter(user -> user.getId().equals(id)).findFirst();
         foundUser.ifPresent(user -> user.setName(name));
     }
+
+
 
 
 

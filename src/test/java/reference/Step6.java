@@ -14,7 +14,7 @@ import static org.mockito.Mockito.*;
 public class Step6 {
     @Test
     @DisplayName("6. 검증을 순서대로 하기 InOrder 이용")
-    public void argumentMatchers() {
+    public void test() {
 
         List<User> userList = new ArrayList<>();
         userList.add(new User("AAAAA" , "pass123" , "내이름은A" , "010-1111-1111"));
